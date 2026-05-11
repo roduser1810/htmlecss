@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> midias em html</title>
+</head>
+<body>  
+    <h1>Imagem dinamica</h1>
+<p>tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+
+<picture >
+    <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+    <source media="(max-width:1050px)" srcset="imagens/m.png" type="image/png">
+    <img src="imagens/g.png" alt="imagem felivel">
+</picture>
+<h1>    Reproduzindo audio</h1>
+<p>
+    vamos aprender a reproduzir audio em html
+</p>
+<audio src="midia/musica.mp3" autoplay controls></audio>
+<!-- audio seram reproduzidos em formatos mp3 ogg way -->
+ <audio preload="">
+    <source src="midia/musica.mp3" type="audio/mpag">
+    <source src="midia/musica.ogg" type="audio/ogg">
+    <source src="midia/musica.wav" type="audio/wav">
+    <p>
+        infelizmente seu navegador nao consegue produzir audio <a href="midia/musica.mp3">clique aqui para baixar o mp3</a>
+    </p>
+ </audio>
+</body>
+</html>
