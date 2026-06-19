@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+
+
+        }
+        td.num{
+            text-align: right
+        }
+        td , th{
+            border: 1px solid black;
+            padding: 10px;
+
+
+        }
+        thead > tr >th{
+            position:sticky;
+            top: -1px;
+            background-color: #4b4b4b;
+        }
+        thead , tfoot{
+            background-color: #4b4b4b;
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd){ /* impar pode ser 2n-1*/
+            background-color: rgb(255, 255, 255);
+            
+        }
+        
+        tbody > tr:nth-child(even){ /* par pode ser 2n */
+            background-color: rgb(181, 181, 181);
+           
+        }
+        h1{
+            margin-left: 30px;
+            background-color: lightgray;
+            width:360px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- anatomia para tabelas grandes
+     table 
+        caption
+          thead
+                tr , td ,th
+          tbody
+                tr , td ,th
+          tfoot
+                tr , td ,th -->
+                <table>
+      
+                    <thead>
+                        <th scope="col">Estado</th>
+                        <th scope="col" style="width: 100px;">Populaçao</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>São paulo</td>
+                            <td  class="num">45 545 54</td>
+                        </tr>
+                        <tr>
+                            <td>Minas Gerais</td>
+                            <td  class="num">32 3233 32</td>
+                        </tr>
+                        <tr>
+                            <td>Rio de janeiro</td>
+                            <td  class="num">233 332 23</td>
+                        </tr>
+                        <tr>
+                            <td>Bahia</td>
+                            <td  class="num">14 3214 13</td>
+                        </tr>
+                        <tr>
+                            <td>Parana</td>
+                            <td class="num">2323 2332</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Rio grande do sul</td>
+                            <td class="num">23 22322</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Pernambuco
+                            </td>
+                            <td class="num">433434</td>
+                        </tr>
+                        <tr>
+                            <td>Ceara</td>
+                            <td class="num">3442323</td>
+                        </tr>
+                        <tr>
+                            <td>Pará</td>
+                            <td class="num">2332323</td>
+                        </tr>
+                        <tr>
+                            <td>Santa catarina</td>
+                            <td class="num">234324</td>
+                        </tr>
+                        <tr>
+                            <td>Goias</td>
+                            <td class="num">24242242</td>
+                        </tr>
+                        <tr>
+                            <td>Maranhao</td>
+                            <td class="num">24423232</td>
+                        </tr>
+                        <tr>
+                            <td>Amazonas</td>
+                            <td class="num">42432432</td>
+                        </tr>
+                        <tr>
+                            <td>Paraiba</td>
+                            <td class="num">42422323</td>
+                        </tr>
+                        <tr>
+                            <td>Espirito santo</td>
+                            <td class="num">42423232</td>
+                        </tr>
+                        <tr>
+                            <td>Mate grosso</td>
+                            <td class="num">23423423</td>
+                        </tr> 
+                        <tr>
+                            <td>Rio grande do norte</td>
+                            <td class="num">24242423</td>
+                        </tr>
+                        <tr>
+                            <td>Piaui</td>
+                            <td class="num">23223232</td>
+                        </tr>
+                        <tr>
+                            <td>Alagoas</td>
+                            <td class="num">423423342</td>
+                        </tr>
+                        <tr>
+                            <td>Distrito federal</td>
+                            <td class="num">423422432</td>
+                        </tr>
+                        <tr>
+                            <td>Mato grosso do sul</td>
+                            <td class="num">23424233</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sergipe</td>
+                            <td class="num"> 23223322</td>
+                        </tr>
+                        <tr>
+                            <td>Rondonia</td>
+                            <td class="num">42343242</td>
+                        </tr>
+                        <tr>
+                            <td>Tocantins</td>
+                            <td class="num">23423234</td>
+                        </tr>
+                        <tr>
+                            <td>Acre</td>
+                            <td class="num">23244224</td>
+                        </tr>
+                        <tr>
+                            <td>Amapa</td>
+                            <td class="num">23432423</td>
+                        </tr>
+                        <tr>
+                            <td>Romaima</td>
+                            <td class="num">23432422</td>
+                        </tr>
+                    
+                        
+                    </tbody> 
+
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total de habitantes</th>
+                            <td class="num"><strong>213 421 037</strong></td>
+                        </tr>
+                    </tfoot>
+                    <caption>
+                        Populaçao das unidades federais
+                    </caption>
+                </table>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed neque sequi dignissimos, illum iusto veniam, nulla perspiciatis, voluptatibus voluptates vitae accusamus quia quo architecto porro rerum doloremque. Doloribus, architecto fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nihil, cumque, dolor, rem corrupti dolorem sint consequatur esse iure amet maxime ipsa ea saepe delectus quam placeat perspiciatis quo sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veritatis minus repellat reiciendis eaque, beatae, deleniti similique commodi obcaecati ex odio ea cupiditate officiis dicta placeat? Unde dolores optio expedita?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed neque sequi dignissimos, illum iusto veniam, nulla perspiciatis, voluptatibus voluptates vitae accusamus quia quo architecto porro rerum doloremque. Doloribus, architecto fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nihil, cumque, dolor, rem corrupti dolorem sint consequatur esse iure amet maxime ipsa ea saepe delectus quam placeat perspiciatis quo sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veritatis minus repellat reiciendis eaque, beatae, deleniti similique commodi obcaecati ex odio ea cupiditate officiis dicta placeat? Unde dolores optio expedita?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed neque sequi dignissimos, illum iusto veniam, nulla perspiciatis, voluptatibus voluptates vitae accusamus quia quo architecto porro rerum doloremque. Doloribus, architecto fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nihil, cumque, dolor, rem corrupti dolorem sint consequatur esse iure amet maxime ipsa ea saepe delectus quam placeat perspiciatis quo sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veritatis minus repellat reiciendis eaque, beatae, deleniti similique commodi obcaecati ex odio ea cupiditate officiis dicta placeat? Unde dolores optio expedita?</p>                                
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed neque sequi dignissimos, illum iusto veniam, nulla perspiciatis, voluptatibus voluptates vitae accusamus quia quo architecto porro rerum doloremque. Doloribus, architecto fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nihil, cumque, dolor, rem corrupti dolorem sint consequatur esse iure amet maxime ipsa ea saepe delectus quam placeat perspiciatis quo sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veritatis minus repellat reiciendis eaque, beatae, deleniti similique commodi obcaecati ex odio ea cupiditate officiis dicta placeat? Unde dolores optio expedita?</p>     
+                 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed neque sequi dignissimos, illum iusto veniam, nulla perspiciatis, voluptatibus voluptates vitae accusamus quia quo architecto porro rerum doloremque. Doloribus, architecto fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nihil, cumque, dolor, rem corrupti dolorem sint consequatur esse iure amet maxime ipsa ea saepe delectus quam placeat perspiciatis quo sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veritatis minus repellat reiciendis eaque, beatae, deleniti similique commodi obcaecati ex odio ea cupiditate officiis dicta placeat? Unde dolores optio expedita?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed neque sequi dignissimos, illum iusto veniam, nulla perspiciatis, voluptatibus voluptates vitae accusamus quia quo architecto porro rerum doloremque. Doloribus, architecto fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nihil, cumque, dolor, rem corrupti dolorem sint consequatur esse iure amet maxime ipsa ea saepe delectus quam placeat perspiciatis quo sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veritatis minus repellat reiciendis eaque, beatae, deleniti similique commodi obcaecati ex odio ea cupiditate officiis dicta placeat? Unde dolores optio expedita?</p>
+</body>
+</html>
