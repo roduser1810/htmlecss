@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+  
+        }
+        body{
+            background-image: linear-gradient(to left , rgba(38, 38, 224, 0.588) 1%, rgba(76, 224, 31, 0.701) 60% , rgba(249, 253, 40, 0.678)80% ) ;
+            margin-top: 60px;
+        }
+        h1{
+            color: rgb(67, 57, 44);
+            font-size: 50px;
+            text-align: center;
+            padding-top: 50px;
+            margin-left: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+            
+        }
+        input{
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 50px;
+            width: 300px;
+            
+        
+           
+        }
+        
+       
+        p#nome1{
+        text-align: center;    
+        margin-bottom: 25px;     
+        margin-right: 60px;
+          
+        }
+        input#enviar{
+            background-image: linear-gradient(to right, rgb(5, 5, 151) , rgb(41, 167, 41),rgb(209, 209, 0));
+            width: 150px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 15px;
+            transition: 2s;
+            
+        }
+        input#enviar:hover{
+          background-image: linear-gradient(to left,yellow,green,blue);
+            color: rgb(255, 255, 255);
+        }
+        p#enviar1{
+            text-align: center;
+        }
+        p#sobrenome{
+            margin-right: 100px;
+            text-align: center;
+        }
+        main{
+            background-color: white;
+            
+            height: 380px;
+            width: 640px;
+            text-align: center;
+            margin: auto;
+            border-radius: 20px;
+            border: 2px solid rgb(0, 0, 0);
+            box-shadow: 15px 15px 9px rgba(0, 0, 0, 0.615);
+            
+        }
+        p{
+            margin-left: 15px;
+        }
+
+    </style>
+</head>
+<body> 
+    <main>
+        <h1>CADASTRO</h1>
+        <form action="cadastro.php" autocomplete="off">
+            <p id="nome1" >
+                <label for="nome2">Nome : </label>
+                <input type="text" name="nome1" id="nome2"></p>
+            <p id="sobrenome"><label for="sobrenome2">Sobrenome :</label>
+                <input type="text" name="sobrenome" id="sobrenome2">
+            </p>
+            <p id="enviar1"><input type="submit" value="Enviar" id="enviar"></p>
+        
+        </form>
+    </main>
+</body>
+</html>
+
