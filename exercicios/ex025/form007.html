@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+
+<body>
+    <h1>
+        Exemplo de formulario
+    </h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest">
+                <option value="" selected>- - - Escolha - - -</option>
+                <optgroup label="Regiao Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MJ" >Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="CE">Ceará</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="PE">Pernanbuco</option>
+                    <option value="BA">Bahia</option>
+                    <option value="RN">Rio Grande do norte</option>
+                    <option value="BR">Brasilia</option>
+                    <option value="MA">Maranhao</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissao</label>
+            <input type="text" name="prof" id="iprof" list="lstprof" required>
+            <datalist id="lstprof">
+                <option>ADMINISTRADOR</option>
+                <option>DESENVOLVEDOR</option>
+                <option>ADVOGADO</option>
+                <option>AGRONOMO</option>
+            </datalist>
+
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="50" rows="10" placeholder="Digite uma Mensagem" minlength="10" maxlength="1000" ></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
